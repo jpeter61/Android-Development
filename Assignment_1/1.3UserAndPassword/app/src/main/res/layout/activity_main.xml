@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".MainActivity">
+
+<!-- This is in a weird order because it wouldn't
+    compile any other way -->
+    <TextView
+        android:id="@+id/fNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/lNameID"
+        android:layout_below="@id/fNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/dobID"
+        android:layout_below="@id/lNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/dob"
+        android:maxLength="10"
+        android:layout_toRightOf="@id/dobID"
+        android:layout_alignTop="@id/dobID"
+        android:layout_alignBottom="@id/dobID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="MM/DD/YY"
+        android:background="@color/editBackground"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/fName"
+        android:maxLength="10"
+        android:layout_toRightOf="@id/fNameID"
+        android:layout_alignTop="@id/fNameID"
+        android:layout_alignBottom="@id/fNameID"
+        android:layout_alignRight="@id/dob"
+        android:layout_alignLeft="@id/dob"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Jane"
+        android:background="@color/editBackground"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/lName"
+        android:maxLength="10"
+        android:layout_toRightOf="@id/lNameID"
+        android:layout_alignTop="@id/lNameID"
+        android:layout_alignBottom="@id/lNameID"
+        android:layout_alignRight="@id/dob"
+        android:layout_alignLeft="@id/dob"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Doe"
+        android:background="@color/editBackground"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dobID"
+        android:layout_marginTop="30dp"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/userID"
+        android:layout_below="@id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/passID"
+        android:layout_below="@id/userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_below="@id/submit"
+        android:layout_toRightOf="@id/userID"
+        android:layout_alignTop="@id/userID"
+        android:layout_alignBottom="@id/userID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignRight="@id/dob"
+        android:layout_alignLeft="@id/dob"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"
+        android:background="@color/editBackground"
+        />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_below="@id/user"
+        android:layout_toRightOf="@id/passID"
+        android:layout_alignTop="@id/passID"
+        android:layout_alignBottom="@id/passID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignRight="@id/dob"
+        android:layout_alignLeft="@id/dob"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"
+        android:background="@color/editBackground"
+        />
+
+</RelativeLayout>

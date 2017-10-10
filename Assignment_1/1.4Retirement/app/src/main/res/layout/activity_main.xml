@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/principleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Principle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/principle"
+        android:layout_toRightOf="@id/principleID"
+        android:layout_alignBottom="@id/principleID"
+        android:layout_alignTop="@id/principleID"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:background="@color/editBackground"
+        android:inputType="numberDecimal"
+        android:hint="$50000"/>
+
+    <TextView
+        android:id="@+id/additionID"
+        android:layout_below="@id/principleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annual Addition"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/addition"
+        android:layout_toRightOf="@id/additionID"
+        android:layout_alignBottom="@id/additionID"
+        android:layout_alignTop="@id/additionID"
+        android:layout_alignLeft="@id/principle"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:background="@color/editBackground"
+        android:inputType="numberDecimal"
+        android:hint="$1000"/>
+
+    <TextView
+        android:id="@+id/yearsID"
+        android:layout_below="@id/additionID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Years"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/years"
+        android:layout_toRightOf="@id/yearsID"
+        android:layout_alignBottom="@id/yearsID"
+        android:layout_alignTop="@id/yearsID"
+        android:layout_alignLeft="@id/principle"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:background="@color/editBackground"
+        android:inputType="numberDecimal"
+        android:hint="35"/>
+
+    <TextView
+        android:id="@+id/rateID"
+        android:layout_below="@id/yearsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate of Return"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_toRightOf="@id/rateID"
+        android:layout_alignBottom="@id/rateID"
+        android:layout_alignTop="@id/rateID"
+        android:layout_alignLeft="@id/principle"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:background="@color/editBackground"
+        android:inputType="numberDecimal"
+        android:hint="2.5%"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rateID"
+        android:layout_marginTop="30dp"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/outputID"
+        android:layout_below="@id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Amount"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_toRightOf="@id/outputID"
+        android:layout_alignBottom="@id/outputID"
+        android:layout_alignTop="@id/outputID"
+        android:layout_alignLeft="@id/principle"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:background="@color/editBackground"/>
+
+</RelativeLayout>

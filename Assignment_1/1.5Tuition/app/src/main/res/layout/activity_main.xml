@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/creditsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/credits"
+        android:layout_toRightOf="@id/creditsID"
+        android:layout_alignBottom="@id/creditsID"
+        android:layout_alignTop="@id/creditsID"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:background="@color/editBackground"
+        android:inputType="number"
+        android:hint="15"/>
+
+    <TextView
+        android:id="@+id/stateID"
+        android:layout_below="@id/creditsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State Status"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <RadioGroup
+        android:id="@+id/state"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/stateID"
+        >
+
+        <RadioButton
+            android:id="@+id/inState"
+            android:text="In State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="@color/highlight"
+            />
+
+        <RadioButton
+            android:id="@+id/outState"
+            android:text="Out of State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/highlight"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/gradID"
+        android:layout_below="@id/stateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grad Status"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"/>
+
+    <RadioGroup
+        android:id="@+id/grad"
+        android:layout_alignLeft="@id/state"
+        android:layout_below="@id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/gradID">
+
+        <RadioButton
+            android:id="@+id/undergrad"
+            android:text="Undergrad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="@color/highlight"/>
+
+        <RadioButton
+            android:id="@+id/graduate"
+            android:text="Graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/highlight"/>
+
+        <RadioButton
+            android:id="@+id/noDegree"
+            android:text="Non-degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/highlight"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/checkboxID"
+        android:layout_alignLeft="@id/stateID"
+        android:layout_below="@id/grad"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Optional"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/dorm"
+        android:layout_alignLeft="@id/state"
+        android:text="Domitory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/highlight"
+        android:layout_alignTop="@id/checkboxID"/>
+
+    <CheckBox
+        android:id="@+id/food"
+        android:layout_alignLeft="@id/state"
+        android:text="Dining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/highlight"
+        android:layout_below="@id/dorm"/>
+
+    <CheckBox
+        android:id="@+id/park"
+        android:layout_alignLeft="@id/state"
+        android:text="Parking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/highlight"
+        android:layout_below="@id/food"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/park"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        />
+
+    <TextView
+        android:id="@+id/outputID"
+        android:layout_alignLeft="@id/stateID"
+        android:layout_below="@id/submit"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Total"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_alignLeft="@id/credits"
+        android:layout_below="@id/submit"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text=""
+        android:background="@color/editBackground"
+        android:textColor="@color/labelText"
+        android:textSize="15sp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.jamiepeterson.a11_directions.MainActivity">
+
+    <TextView
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Travel along I-94"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/text1"
+        android:background="@color/background1"/>
+
+    <TextView
+        android:id="@+id/l2"
+        android:layout_below="@id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn onto US-23 North"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/text2"
+        android:background="@color/background2"/>
+
+    <TextView
+        android:id="@+id/l3"
+        android:layout_below="@id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit at Washtenaw East"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/text1"
+        android:background="@color/background1"/>
+
+    <TextView
+        android:id="@+id/l4"
+        android:layout_below="@id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drive past Carpenter and Golfside"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/text2"
+        android:background="@color/background2"/>
+
+    <TextView
+        android:id="@+id/l5"
+        android:layout_below="@id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn left onto Hewitt"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/text1"
+        android:background="@color/background1"/>
+
+    <TextView
+        android:id="@+id/l6"
+        android:layout_below="@id/l5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drive two blocks"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/text2"
+        android:background="@color/background2"/>
+
+
+
+</RelativeLayout>

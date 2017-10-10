@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/entryCenterpiece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/operationCenterpiece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/entryCenterpiece"
+        android:text=""
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/Entry1"
+        android:layout_toLeftOf="@id/entryCenterpiece"
+        android:layout_alignTop="@id/entryCenterpiece"
+        android:inputType="numberDecimal|numberSigned"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/editBackground"
+        android:hint="+/-0.0"
+        />
+
+    <EditText
+        android:id="@+id/Entry2"
+        android:inputType="numberDecimal|numberSigned"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/editBackground"
+        android:hint="+/-0.0"
+        android:layout_alignTop="@+id/entryCenterpiece"
+        android:layout_toEndOf="@+id/entryCenterpiece" />
+
+
+    <Button
+        android:id="@+id/subtraction"
+        android:layout_toLeftOf="@id/operationCenterpiece"
+        android:layout_alignTop="@id/operationCenterpiece"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="-"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_toLeftOf="@id/subtraction"
+        android:layout_alignTop="@id/operationCenterpiece"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="+"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_toRightOf="@id/operationCenterpiece"
+        android:layout_alignTop="@id/operationCenterpiece"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="x"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/division"
+        android:layout_toRightOf="@id/multiplication"
+        android:layout_alignTop="@id/operationCenterpiece"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="/"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Calculation Above"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_below="@+id/operationCenterpiece"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/text"
+        android:gravity="center_horizontal"/>
+
+
+
+
+</RelativeLayout>
