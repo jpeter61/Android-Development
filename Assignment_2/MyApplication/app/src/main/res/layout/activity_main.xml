@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp">
+
+        <TableRow>
+            <TextView
+                android:text="Assignment"
+                style="@style/LabelTheme"
+                />
+
+            <EditText
+                android:id="@+id/assignmentInput"
+                android:inputType="number"
+                android:hint="0-200"
+                style="@style/InputTheme"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Midterm"
+                style="@style/LabelTheme"
+                />
+
+            <EditText
+                android:id="@+id/midtermInput"
+                android:inputType="number"
+                android:hint="0-100"
+                style="@style/InputTheme"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Final"
+                style="@style/LabelTheme"
+                />
+
+            <EditText
+                android:id="@+id/finalInput"
+                android:inputType="number"
+                android:hint="0-100"
+                style="@style/InputTheme"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Final Grade"
+                style="@style/LabelTheme"
+                />
+
+            <TextView
+                android:id="@+id/scoreOutput"
+                android:text="---%"
+                style="@style/ViewTheme"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Letter Grade"
+                style="@style/LabelTheme"
+                />
+
+            <TextView
+                android:id="@+id/letterOutput"
+                android:text="A - D"
+                style="@style/ViewTheme"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_below="@id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enter"/>
+</RelativeLayout>

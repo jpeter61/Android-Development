@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2.2 Online Purchase</string>
+    <string-array name="deliveryValues">
+        <item>Next Day</item>
+        <item>Second Day</item>
+        <item>Normal</item>
+    </string-array>
+</resources>
