@@ -10,7 +10,8 @@ import android.widget.GridLayout;
 import android.widget.TextView;
 
 
-public class AppInterface extends GridLayout {
+public class
+AppInterface extends GridLayout {
     private EditText[][] board;
 
     public AppInterface(Context context, int width, int[][] values,

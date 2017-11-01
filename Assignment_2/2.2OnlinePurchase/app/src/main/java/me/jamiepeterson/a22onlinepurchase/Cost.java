@@ -1,8 +1,5 @@
 package me.jamiepeterson.a22onlinepurchase;
 
-
-import android.widget.Switch;
-
 public class Cost {
     private int cost;
     public Cost(int price, boolean warranty, boolean insurance, String delivery){

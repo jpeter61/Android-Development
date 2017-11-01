@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.jamiepeterson.a29myapp.MainActivity"
+    android:background="#C9C9C9">
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter text below and the app will read it to you."
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="#424242"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/textBox"
+        android:inputType="textMultiLine"
+        android:lines="13"
+        android:maxLines="13"
+        android:gravity="top|left"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directions"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="vertical"
+        android:background="#FEFFEA"
+        android:textColor="#424242"
+        android:textColorHint="#A3A3A3"
+        android:hint="Turn up the volume to hear"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Speak"
+        android:background="#FCFC62"
+        android:textColor="#424242"/>
+
+</RelativeLayout>

@@ -84,7 +84,7 @@
             android:gravity="center"
             android:background="#FCFCFC"
             android:textColor="#02111B"
-            android:text="2121212112"
+            android:text=""
             />
     </GridLayout>
 </RelativeLayout>

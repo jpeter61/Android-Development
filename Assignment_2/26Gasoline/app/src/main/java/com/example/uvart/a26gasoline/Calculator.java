@@ -1,9 +1,5 @@
 package com.example.uvart.a26gasoline;
 
-/**
- * Created by uvart on 10/26/17.
- */
-
 public class Calculator {
     private float price;
     private int gallons;

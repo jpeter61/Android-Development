@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="/var/host/media/removable/461  AI/Android-Development/Assignment_2/27SlidingPuzzle" />
-            <option value="/var/host/media/removable/461  AI/Android-Development/Assignment_2/27SlidingPuzzle/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
