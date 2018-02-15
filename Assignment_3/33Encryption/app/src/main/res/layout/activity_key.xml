@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9C9C9">
+
+    <TextView
+        android:id="@+id/keyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Key: "
+        android:textColor="#424242"
+        android:textSize="30sp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/keyLabel"
+        android:layout_alignTop="@id/keyLabel"
+        android:padding="10dp"
+        android:background="#FEFFEA"
+        android:textColor="#424242"
+        android:textColorHint="#A3A3A3"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/decrypt"
+        android:layout_margin="20dp"
+        android:text="Submit"
+        android:background="#FCFC62"
+        android:textColor="#424242"
+        android:onClick="submit"/>
+</RelativeLayout>

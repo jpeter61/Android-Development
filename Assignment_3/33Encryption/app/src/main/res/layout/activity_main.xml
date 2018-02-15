@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#C9C9C9">
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter text below"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="#424242"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/textBox"
+        android:inputType="textMultiLine"
+        android:lines="13"
+        android:maxLines="13"
+        android:gravity="top|left"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directions"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="vertical"
+        android:background="#FEFFEA"
+        android:textColor="#424242"
+        android:textColorHint="#A3A3A3"
+        android:hint=""
+        android:maxLength="200"
+        />
+    <Button
+        android:id="@+id/decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Decrypt"
+        android:background="#FCFC62"
+        android:textColor="#424242"
+        android:onClick="decrypt"/>
+
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox"
+        android:layout_toLeftOf="@id/decrypt"
+        android:layout_margin="20dp"
+        android:text="Encrypt"
+        android:background="#FCFC62"
+        android:textColor="#424242"
+        android:onClick="encrypt"/>
+
+    <Button
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox"
+        android:layout_toRightOf="@id/decrypt"
+        android:layout_margin="20dp"
+        android:text="Key"
+        android:background="#FCFC62"
+        android:textColor="#424242"
+        android:onClick="key"/>
+
+</RelativeLayout>

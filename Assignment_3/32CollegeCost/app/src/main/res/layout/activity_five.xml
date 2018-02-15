@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context="me.jamiepeterson.a32collegecost.TwoActivity">
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/labelText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Summary:"
+        android:layout_margin="20dp"
+        />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directions"
+        android:layout_centerHorizontal="true"
+        android:rowCount="5"
+        android:columnCount="2">
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="0"
+            android:layout_rowSpan="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="Credits: "/>
+
+        <TextView
+            android:id="@+id/creditsOut"
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="0"
+            android:layout_rowSpan="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="15"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="1"
+            android:layout_rowSpan="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="Level: "/>
+
+        <TextView
+            android:id="@+id/levelOut"
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="1"
+            android:layout_rowSpan="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="UnderGraduate"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="2"
+            android:layout_rowSpan="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="Dormitory: "/>
+
+        <TextView
+            android:id="@+id/dormOut"
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="2"
+            android:layout_rowSpan="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="Yes"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="3"
+            android:layout_rowSpan="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="Dining: "/>
+
+        <TextView
+            android:id="@+id/diningOut"
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="3"
+            android:layout_rowSpan="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="No"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="4"
+            android:layout_rowSpan="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="Total Cost: "/>
+
+        <TextView
+            android:id="@+id/total"
+            android:textSize="20dp"
+            android:textColor="@color/labelText"
+            android:layout_row="4"
+            android:layout_rowSpan="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:text="$500000000"/>
+
+    </GridLayout>
+
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:text="Back"/>
+
+</RelativeLayout>

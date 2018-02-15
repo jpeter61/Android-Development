@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context="me.jamiepeterson.a32collegecost.TwoActivity">
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/labelText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Select your undergraduate/graduate status:"
+        android:layout_margin="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directions"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <RadioButton
+            android:id="@+id/Undergraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undergraduate $300 per credit hour"
+            android:textColor="@color/labelText"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/Graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduate $400 per credit hour"
+            android:textColor="@color/labelText"
+            android:textSize="20sp"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:text="Back"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="Next"/>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.jamiepeterson.a35unitconversions.MainActivity">
+    <item
+        android:id="@+id/large"
+        android:title="Mile/Kilometer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/medium"
+        android:title="Feet/Meter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/small"
+        android:title="Inch/Centimeter"
+        app:showAsAction="never" />
+</menu>

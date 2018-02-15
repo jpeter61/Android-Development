@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context="me.jamiepeterson.a32collegecost.TwoActivity">
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/labelText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Check if you want Dorm and/or Dining:"
+        android:layout_margin="20dp"
+        />
+
+    <CheckBox
+        android:id="@+id/dorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dormitory $1000"
+        android:layout_below="@id/directions"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/dining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dining $500"
+        android:layout_below="@id/dorm"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:text="Back"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="Next"/>
+
+</RelativeLayout>
